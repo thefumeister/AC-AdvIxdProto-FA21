@@ -26,18 +26,6 @@ class Asteroid {
     this.position = new PVector(random(100, 700), random(200,700));
   }
   
-  // reduce mineral count when mined
-  void mined() {
-    this.minerals -= 1;
-    if (this.minerals <= 0) {
-      this.minerals = 0;
-    }
-  }
-  
-  // Move asteroids across screen
-  //void move() {
-
-  //}
   // Draw asteroid, color dependent on mineral count
   void display() {
     
