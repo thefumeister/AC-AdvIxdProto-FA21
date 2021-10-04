@@ -2,18 +2,153 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/path/to/tailwind.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Addy Fu Repository</title>
 </head>
-<body>
-    <div class="flex justify-center fixed top-0 w-full left-0">
-        <nav class="bg-gray-100 h-24 w-full justify-center px-20">
-            <a href="index.html" class="font-light px-4 py-3">Natural Systems</a>
+<body style="margin: 20px">
+    <div class="bg-black flex justify-center fixed top-0 w-full left-0">
+        <nav class="h-24 w-full justify-center flex-wrap px-20 py-8 text-white mx-auto">
+            <a href="index.html" class="text-lg font-light px-4 py-3">NATURAL SYSTEM</a>
         </nav>
     </div>
 
-    <h1>Hey there. It's Addy Fu's Repository for Advanced Interactive Prototyping.</h1>
+    <div class="flex mt-40 mx-20 w-full container">
+        <h1 class="text-black text-4xl">Hey there. It's Addy Fu's Repository for Advanced Interactive Prototyping.</h1>
+    </div>
+
     
+    <div class="mt-40 mx-20 w-full container">
+        <h1 class="text-black text-3xl">Natural Systems</h1>
+        <h1 class="mt-5 text-black text-3xl">Solar System Space Mining</h1>
+        <p class="mt-2 text-black text-lg">A rudimentary system model of human mining efforts in our solar system</p>
+
+        <img class = "w-full" src="solar_system_diagram.jpg" alt="System Diagram">
+        <img class = "w-full" src="solar_system_flow_chart.jpg" alt="System Flow Chart">
+
+        <h2 class="mt-10 text-black text-xl">Why did you decide to work on this topic, what's your interest there?</h2>
+        <p class="mt-4 text-black text-lg">Space is fascinating to me, it’s a vast expanse of uncharted territory that humans 
+            have only ever scouted with telescopes and unmanned machines. It’s a frontier of infinite potential and 
+            I truly do believe that the future of our civilization lies there. Space mining is simply a faucet of that future, 
+            and it comes without all of the conflict and strings of mining here on Earth.</p>
+
+        <h2 class="mt-8 text-black text-xl">How did you envision your system in the beginning and how did that vision change?</h2>
+        <p class="mt-4 text-black text-lg">Initially the system plan I had encompassed the Earth, sun, and asteroids wherein 
+            Earth would construct mining teams using energy from the sun and minerals from asteroids before sending them out 
+            on resource retrieval missions for the ultimate goal of developing Earth. However, the sun is a passive energy source 
+            in real life and doesn't really need to be modeled in the system. In the end, the system was streamlined into probes, 
+            asteroids, and the Earth: a collector, objects to be collected, and the deposit location.</p>
+
+        <h2 class="mt-8 text-black text-xl">How did you translate your diagram into code?</h2>
+        <p class="mt-4 text-black text-lg">The diagram was thought in terms of code to begin with, which made the transition 
+            relatively straightforward to understand. It helped inform what code elements needed to be implemented, how they 
+            needed to be implemented, and the necessary interactions between them.</p>  
+
+        <h2 class="mt-8 text-black text-xl"> How did you deal with the complexity in your system?</h2>
+        <p class="mt-4 text-black text-lg">In addition to the Processing References archive, I browsed different forums such as 
+            Stackoverflow for troubleshooting errors and looking for solutions. In truth, the system isn’t terribly complicated.</p> 
+
+        <h2 class="mt-8 text-black text-xl"> How did you decide on the interactive elements?</h2>
+        <p class="mt-4 text-black text-lg">The interactive elements were chosen based on how I thought a real space mining mission 
+            would go: mission control would look for rich asteroids, send a probe for collection, mine, recall it for retrieval, repeat. 
+            Translate that to code, and the only real interactable item would be the probe.</p>
+        <h2 class="mt-8 text-black text-xl"> What would be some paths for future development of the project?</h2>
+        <p class="mt-4 text-black text-lg">In addition to an aesthetic overhaul with vector drawings or images, I want to expand the scope
+             to include a full model of the solar system and add more complexity to mineral collection beyond an arbitrary score metric. 
+            Asteroids should contain different kinds of minerals which can be used for construction of human space installations, perhaps.</p>
+            
+    </div>
+    <div class="mt-20 mx-20 w-full container justify-center">
+        <h1 class="mt-5 text-black text-3xl">Bits and Pieces of Code</h1>
+        <p class="mt-10 text-black text-lg">
+            // horizontal movement, speed is calculated by multiplying a fraction of the distance between the mouse position and probe position<br>
+            float targetX = mouseX;<br>
+            float distanceX = targetX - position.x;<br>
+            position.x += distanceX * speed;<br>
+            <br>
+            // vertical movement, speed is calculated by multiplying a fraction of the distance between the mouse position and probe position<br>
+            float targetY = mouseY;<br>
+            float distanceY = targetY - position.y;<br>
+            position.y += distanceY * speed;</p>
+        
+    </div>
+
+    <div class="mt-10 mx-20 w-full container justify-center">
+        <p class="mt-10 text-black text-lg">
+            // the probe will passively scan the ArrayList, check which object is the closest and will "lock on" to it 
+            so that other functions affect the correct item on the ArrayList in relation to the display<br>
+            try {<br>
+                Asteroid nearestAsteroid = asteroids.get(0);<br>
+                   float distance = width + height;<br>
+                   for (Asteroid asteroid : asteroids) {<br>
+                     float currdistance = dist(position.x, position.y, asteroid.position.x, asteroid.position.y);<br>
+                     if (currdistance <= distance) {<br>
+                        nearestAsteroid = asteroid;<br>
+                        distance = currdistance;}<br>
+                   }<br>
+                targetAsteroid = nearestAsteroid;<br>
+              } catch (Exception e) {} // prevent errors when ArrayList is empty
+            }</p>
+        
+    </div>
+
+    <div class="mt-10 mx-20 w-full container justify-center">
+        <p class="mt-10 text-black text-lg"> 
+            // collect mineral from asteroid and add to probe inventory<br>
+            void mine(ArrayList<Asteroid> asteroids) {<br>
+              // probe will mine the asteroid so long as it is intersecting it<br>
+               try {<br>
+                  if (abs(targetAsteroid.position.x - position.x) <= 100 && abs(targetAsteroid.position.y - position.y) <= 100) {<br>
+                    if (asteroids.size() >= 1 && (full == false)) { <br>
+                      targetAsteroid.minerals -= 1;<br>
+                      targetAsteroid.radiusL -= 25;<br>
+                      targetAsteroid.radiusW -= 25;<br>
+                      full = true;<br>
+                      <br>
+                      if (targetAsteroid.minerals <= 0) {<br>
+                        asteroids.remove(targetAsteroid );
+                      }<br>
+                     }<br>
+                  }<br>
+                } catch (Exception e) {} // prevent errors when mouse is clicked without any items in ArrayList
+            }
+        </p>
+        
+    </div>
+
+    <div class="mt-10 mx-20 w-full container justify-center">
+        <p class="mt-10 text-black text-lg"> 
+            void display() {<br>
+    
+                fill(depColor);<br>
+                if (minerals == 1) {<br>
+                  fill(poorColor);
+                }<br>
+                if (minerals == 2) {<br>
+                  fill(midColor);
+                }<br>
+                if (minerals == 3) {<br>
+                  fill(richColor);
+                }<br>
+                <br>
+                noStroke();<br>
+                ellipse(position.x, position.y, radiusL, radiusW);<br>
+                
+            
+                }
+        </p>
+        
+    </div>
+
+    <div class="mt-10 mx-20 w-full container justify-center">
+    <img class = "w-1/2" src="solar_system_demo.gif" alt="sdemo 1">
+    </div>
+    <div class="mt-20 mx-20 w-full container flex flex-wrap">    
+        <img class = "w-1/3 mr-2" src="project_screenshot_1.png" alt="screenshot 1">
+        <img class = "w-1/3 ml-2" src="project-screenshot-2.png" alt="screenshot 2">
+        <img class = "w-1/3 mt-4 mr-2" src="project-screenshot-3.png" alt="screenshot 3">
+        <img class = "w-1/3 mt-4 ml-2" src="project-screenshot-4.png" alt="screenshot 4"></div>
+
 </body>
 </html>
