@@ -19,52 +19,45 @@
 
     <div class="mt-20 mx-20 w-full container">
         <h1 class="text-black text-3xl font-bold">Control Systems</h1>
-        <h1 class="mt-20 text-black text-3xl">Space Mining</h1>
+        <h1 class="mt-10 text-black text-3xl">Space Mining</h1>
         <p class="mt-2 text-black text-lg">A rudimentary arcade game simulating human mining efforts in our solar system.</p>
     </div>
 
-    <div class="mt-10 mx-20 w-full container justify-center">
+    <div class="mx-20 w-full container flex justify-between">
         <iframe src="https://player.vimeo.com/video/638509599" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-    <div class="mt-10 mx-20 w-full container justify-center">
-        <video controls="controls" width="800" height="600" name="Game Demo">
+        <video controls="controls" width="365" height="365" name="Game Demo">
             <source src="project2-demo.mov">
         </video>
     </div>
     
-    <div class="mt-20 mx-20 w-full container">
-        <h2 class="mt-10 text-black text-xl">Why did you decide to work on this topic, what's your interest there?</h2>
+    <div class="mx-20 w-full container">
         <p class="mt-4 text-black text-lg">This is a continuation of project 1, the natural system of the solar system and space mining. I'll
             reiterate what I said about that project: Space is fascinating. It’s a vast expanse of infinite positibility. Space mining is simply
             a faucet of mankind's future. I wanted to expess that in a simple arcade game, and perhaps in a few years, decades, or centuries, 
             someone will control mining probes and collect resources from the stars as easily as they do in this simple game.</p>
 
-        <h2 class="mt-8 text-black text-xl">How did you envision your controller in the beginning and how did that vision change?</h2>
         <p class="mt-4 text-black text-lg">My original intentions was to simply remap the controls from a mouse and keyboard to a button and joystick
             or, perhaps, a pair of potentiometers. While that vision has largely remained the same, the final system mechanisms did change to 
             introduce challenge and chance into an otherwise straightforward simulation.
         </p>
 
-        <h2 class="mt-8 text-black text-xl">How did the physical peculiarities of the sensors influence your interaction?</h2>
         <p class="mt-4 text-black text-lg">It really was quite simple. The joystick is a natural fit for two-dimensional movement and it was easy
             to make the transition from mouse controls to the new affordance. The button was a bit more complicated. The previous system necessitated
             the use of several keys, but for an arcade control scheme the simpler the better. Therefore, I had to reduce the amount of buttons down
             to one if any at all. The current targeting mechanic is a direct result of reducing down the necessary inputs.
         </p>  
 
-        <h2 class="mt-8 text-black text-xl"> How did the communication schema influence your interaction?</h2>
         <p class="mt-4 text-black text-lg">While I originally had only basic markings to provide subtle suggestions to how the control mapping worked, 
             ultimately, there's only two methods of input. After some user testing, I found that introducing some illustrations on the controller helped 
             people immerse themselves into the game, but there was never any confusion regarding the controls.
         </p> 
 
-        <h2 class="mt-8 text-black text-xl"> How did you settle on the physical shape of your controllers?</h2>
-        <p class="mt-4 text-black text-lg">While I did play around with the idea of a handheld controller, ultimately I thought that this system 
+        <p class="mt-4 text-black text-lg">I did play around with the idea of a handheld controller, but ultimately I thought that this system 
             would make the most sense on an arcade control panel. That, and a tighter controller wouldn't have been able to accomodate the M-F wires
             that connected the input hardware to the breadboard. There certainly is room for streamlining it, but it'd be difficult in the breadboards
             current configuration.
         </p>
-        <h2 class="mt-8 text-black text-xl"> What would be some paths for future development of the project?</h2>
+
         <p class="mt-4 text-black text-lg">There are some performance issues in the current build that I'd like to sort out, in addition to various
             improvements to graphics, and increasing the build quality of the controller.
         </p>
