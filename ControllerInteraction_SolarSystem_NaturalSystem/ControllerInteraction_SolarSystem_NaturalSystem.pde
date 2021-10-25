@@ -5,10 +5,6 @@
 // if the probe makes contact with a rich asteroid, it will collect it
 // the probe will automatically deposit the minerals on earth
 
-// maybe add obstacles
-// add a nice starry background
-// rng for challenge
-
 import processing.serial.*;
 
 Serial myConnection;
@@ -151,7 +147,6 @@ void serialEvent(Serial conn) {
       launch = false;
     }
 
-    printArray(values);
   }
   
 
