@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Addy Fu Repository</title>
+</head>
+<body>
+    <div class="bg-black flex top-0 w-full left-0">
+        <nav class="h-24 flex-wrap px-20 py-8 text-white mx-auto">
+            <a href="index.html" class="text-lg font-light px-4 py-3">Home</a>
+            <a href="project1.html" class="text-lg font-light px-4 py-3">Natural System</a>
+            <a href="project2.html" class="text-lg font-light px-4 py-3">Control Systems</a>
+            <a href="project3.html" class="text-lg font-light px-4 py-3">Communication Systems</a>
+            <a href="project4.html" class="text-lg font-light px-4 py-3">Data Collection/Visualization</a>
+            <a href="reading.html" class="text-lg font-light pl-4 py-3">Reading</a>
+        </nav>
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#cbd5e1">
+        <div class="container mx-20 flex">
+            <div>
+                <h2 class="text-4xl font-bold" style="color:rgb(255, 99, 71);">PROJECT 4</h2>
+                <h1 class="mt-4 text-6xl font-bold" style="color:rgb(255, 99, 71);">Data Collection and Visualization</h1>
+            </div>
+            <div class="w-1/4 mx-10">
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 99, 71);">PROJECT BRIEF</h1>
+                <p class="mt-4 text-lg" style="color:rgb(255, 99, 71);">Explore modern (read: extensive and invasive) data collection by using a 
+                    custom sensor suite to gather multiple types of environmental input and visualize that data in a 2D
+                    graphic format.
+                </p>
+            </div>
+            <div class="w-1/4 ml-10">
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 99, 71);">CONCEPT</h1>
+                <p class="mt-4 text-lg" style="color:rgb(255, 99, 71);">This project aims to expand upon the core concept of environmental data collection from 
+                    project 3 by combining several types of sensors and feeding the readings into a single digital space that can 
+                    interpret and display all of it.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#0d9488">
+        <div class="container mx-20 flex">
+            <div class="w-1/4 mr-10">
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">PROJECT IMPETUS</h1>
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">Understanding the basics of wireless communication 
+                    and data feeds is valuable, but the experience taking raw data readings from a DIY hardware 
+                    configuration, interpreting it in a meaingful way, and applying it to front-end design is makes this undertaking worthwhile.
+                </p>
+            </div>
+            <div class="w-1/4 mx-10">
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">PROJECT INSPIRATION</h1>
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">The inspirations of this project came from the communications 
+                    systems project the Nest thermostat: a development of the smarthome movement whose user interface and control mechanism I found positively 
+                    delightful in comparison to any other thermostat I've used before. 
+                </p>
+            </div>
+            <div class="w-1/4 ml-10">
+                <img src="assets/images/project-4/nest-thermostat.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="w-full pt-24 pb-24" style="background-color:#000">
+        <div class="mx-20 container">
+            <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">PROJECT GOALS</h1>
+            <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">Ultimately, I decided that the project would consist of 4 different kinds of data from 
+                multiple sensors: temperature, humidity, light and sound. My goal was to take that data and create a user friendly room environment visualizer.
+            </p>
+        </div>
+    </div>
+    <div class="w-full pt-48 pb-48" style="background-color:#facc15">
+        <div class="container mx-20 flex">
+            <h1 class="text-black text-3xl font-bold" style="text-align:center;">ROADMAP</h1>
+        </div>
+        <div class="container mx-20 mt-40 flex">
+            <div class="w-1/5 mr-10">
+                <h1 class="mt-10 text-2xl font-bold">Week 1</h1>
+                <ul class="mt-4 text-lg">
+                    <li>System Diagramming</li>
+                    <li>Choosing Sensors</li>
+                    <li>Assembling First Sensor Suite Prototype</li>
+                    <li>Start Coding in Arduino</li>
+                </ul>
+            </div>
+            <div class="w-1/5 mx-10">
+                <h1 class="mt-10 text-2xl font-bold">Week 2</h1>
+                <ul class="mt-4 text-lg">
+                    <li>Finishing Arduino Code</li>
+                    <li>Test Different Sound Sensors</li>
+                </ul>
+            </div>
+            <div class="w-1/5 ml-10">
+                <h1 class="mt-10 text-2xl font-bold">Week 3</h1>
+                <ul class="mt-4 text-lg">
+                    <li>Finalize Sound Sensor Hardware</li>
+                    <li>Gather Environmental Data</li>
+                </ul>
+            </div>
+            <div class="w-1/5 ml-10">
+                <h1 class="mt-10 text-2xl font-bold">Week 4</h1>
+                <ul class="mt-4 text-lg">
+                    <li>Interpret Data</li>
+                    <li>Create a GUI Display</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-20 pt-48 pb-48 w-full container">
+        <h1 class="text-3xl font-bold mb-4">DIAGRAM</h1>
+        <p class="mt-4 text-lg mb-12">I chose four different environmental readings to use for the scope of this project, although this could 
+            scale up or down depending on individual use cases.
+        </p>
+        <img src="assets/images/project-4/sensor-suite-diagram.png" alt="sensor_system_diagram">
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#1d4ed8">
+        <div class="container mx-20 flex">
+            <h1 class="text-black text-3xl font-bold" style="text-align:center; color:rgb(255, 255, 255);">HARDWARE</h1>
+        </div>
+        <div class="container mx-20 mt-20 flex">
+            <div class="w-1/5 mr-10">
+                <a href="https://www.adafruit.com/product/3721"><img src="assets/images/project-4/am2320.png" alt="tempHum sensor"></a>
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">AM2320 <br>Temperature/Humidity Sensor</h1>
+            </div>
+            <div class="w-1/5 mx-10">
+                <a href="https://www.adafruit.com/product/161"><img src="assets/images/project-4/photocell.png" alt="light sensor"></a>
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">Photocell Resistor <br>Light Sensor</h1>
+            </div>
+            <div class="w-1/5 ml-10">
+                <a href="https://www.seeedstudio.com/Grove-Sound-Sensor-Based-on-LM358-amplifier-Arduino-Compatible.html"><img src="assets/images/project-4/sound-sensor-3.png" alt="mic 2"></a>
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">Grove LM358 Amp <br>Sound Sensor</h1>
+            </div>
+            <div class="w-1/5 ml-10">
+                <a href="https://www.adafruit.com/product/3619"><img src="assets/images/project-4/esp32.png" alt="esp32"></a>
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">Huzzah32 <br>ESP32</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pb-48" style="background-color:#1d4ed8">
+        <div class="container mx-20 flex">
+            <h1 class="text-3xl font-bold" style="text-align:center; color:rgb(255, 255, 255);">SOUND SENSOR</h1>
+        </div>
+        <div class="container mx-20 mt-20 flex">
+            <div class="w-1/4 mr-20">
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">Adding sound to the system was the most difficult part of the assembly. I tried three 
+                    different sensors over the course of three weeks until I finally found one that was compatible with Arduino and the rest 
+                    of my hardware in addition to being sensitive enough to actually provide useful readings.
+                </p>
+            </div>
+            <div class="w-1/5 mr-10">
+                <h1 class="mt-10 mb-2 text-2xl font-bold" style="color:rgb(255, 255, 255);">I2S MEMS Breakout</h1>
+                <a href="https://www.adafruit.com/product/3421"><img src="assets/images/project-4/sound-sensor-1.png" alt="mic 1"></a>
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">This microphone simply didn't work in my version
+                    of Arduino and the documentation offered no answers as to why. Even after installing 
+                    the correct libraries and testing the example code, nothing was ever outputted into 
+                    the serial monitor.
+                </p>
+            </div>
+            <div class="w-1/5 mx-10">
+                <h1 class="mt-10 mb-2 text-2xl font-bold" style="color:rgb(255, 255, 255);">Piezo Sensors</h1>
+                <a href="https://www.amazon.com/piezo-sensor/s?k=piezo+sensor"><img src="assets/images/project-4/piezo-sensor.JPG" alt="mic 2"></a>
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">Piezo sensors work by detecting vibrations in solid material 
+                    such as glass or certain types of wood as a result of sound waves. Frankly, it didn't provide 
+                    any useful readings as it wasn't sensitive enough and was rather finicky in what it detected.
+                </p>
+            </div>
+            <div class="w-1/5 ml-10">
+                <h1 class="mt-10 mb-2 text-2xl font-bold" style="color:rgb(255, 255, 255);">Grove Sound Sensor</h1>
+                <a href="https://www.seeedstudio.com/Grove-Sound-Sensor-Based-on-LM358-amplifier-Arduino-Compatible.html"><img src="assets/images/project-4/sound-sensor-3.png" alt="mic 2"></a>
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">Ultimately this was the sensor chosen. It's a simple 
+                    analog sound sensor that picks up noise close to the microphone very well and did a 
+                    passable job at detecting ambient noise.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-48 pb-48 w-full">
+        <div class="container mx-20 flex">
+            <h1 class="text-3xl font-bold mb-12">SENSOR PLACEMENT</h1>
+        </div>
+        <div class="container mx-20 flex">
+            <div class="w-1/3">
+                <h1 class="mt-10 text-2xl font-bold">Room 1</h1>
+                <img src="assets/images/project-4/room1-sensor-placement.JPG" alt="sensor room 1">
+            </div>
+            <div class="w-1/3 ml-10">
+                <h1 class="mt-10 text-2xl font-bold">Room 2</h1>
+                <img src="assets/images/project-4/room2-sensor-placement.JPG" alt="sensor room 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-48 pb-48 w-full">
+        <div class="container mx-20 flex">
+            <h1 class="text-3xl font-bold mb-12">PROTOTYPE</h1>
+        </div>
+        <div class="container mx-20 mt-20 flex">
+            <div class="w-1/3">
+                <img src="assets/images/project-4/housing-cut.JPG" alt="Cardboard Cutout">
+                <img src="assets/images/project-4/housing-final-h.JPG" alt="Cardboard Housing" class="mt-2">
+            </div>
+            <div class="w-1/3 mx-10">
+                <img src="assets/images/project-4/housing-final-v.JPG" alt="Cardboard Housing 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#1d4ed8">
+        <div class="container mx-20">
+            <h1 class="text-3xl font-bold" style="color:rgb(255, 255, 255);">SENSOR READINGS</h1>
+            <p class="mt-4 text-lg mb-12" style="color:rgb(255, 255, 255);">Over the course of about 24 hours, I collected data from a bedroom and uploaded the readings every 10 seconds 
+                to adafruit.io: an online data feed service made for their wi-fi enabled microcontrollers. Unfortunately Adafruit throttles feeds as a defense mechanism against 
+                cyber attacks, therefore the 10 second interval is there to ensure against a false DOS attack alarm which is against the terms of service. In a purpose-built system, 
+                this pause would be unnecessary.
+        </div>
+        </p>
+        <div class="container mx-20 mt-20 flex">
+            <div class="w-1/5 mr-10">
+                <img src="assets/images/project-4/temperature-readings.png">
+                <h1 class="mt-10 text-2xl" style="color:rgb(255, 255, 255);">Temperature Readings</h1>
+            </div>
+            <div class="w-1/5 mx-10">
+                <img src="assets/images/project-4/humidity-readings.png">
+                <h1 class="mt-10 text-2xl" style="color:rgb(255, 255, 255);">Humidity Readings</h1>
+            </div>
+            <div class="w-1/5 mx-10">
+                <img src="assets/images/project-4/light-readings.png">
+                <h1 class="mt-10 text-2xl" style="color:rgb(255, 255, 255);">Light Readings</h1>
+            </div>
+            <div class="w-1/5 ml-10">
+                <img src="assets/images/project-4/sound-readings.png">
+                <h1 class="mt-10 text-2xl" style="color:rgb(255, 255, 255);">Sound Readings</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#ec4899">
+        <div class=" w-1/2 container mx-20">
+            <h1 class="text-3xl font-bold" style="color:rgb(255, 255, 255);">GUI OUTPUT</h1>
+            <p class="mt-4 text-lg mb-12" style="color:rgb(255, 255, 255);">I then took those readings from adafruit.io and put them into a p5.js program 
+                I coded out to visualize the data. There are several different ways to handle the data feeds: I could take every single data point (or a sample size) 
+                and display the average readings or I could set it up so that it's a live data reader that uses only the last data point. <br>
+                <br>Using color language, plain 
+                text, subjective captions, and motion graphics, I hoped that the UI would not only serve as a informational dashboard but also convey the feeling that 
+                the data means.
+            </p>
+        </div>
+        <div class="container mx-20 mt-20 mb-20 flex">
+            <div class="w-1/2 mr-10">
+                <img src="assets/images/project-4/gui1-high-readings.png">
+            </div>
+            <div class="w-1/2 ml-10">
+                <img src="assets/images/project-4/gui1-low-readings.png">
+            </div>
+        </div>
+        <div class="container mx-20 mt-20 mb-20 flex justify-center">
+            <div class="w-1/2">
+                <video controls="controls" width="360" height="640" name="GUI 1 Demo">
+                    <source src="assets/images/project-4/gui-one.mov">
+                </video>
+            </div>
+            <div class="w-1/2">
+                <iframe src="https://editor.p5js.org/thefumeister/full/63eqbF-d1" width="600" height="640"></iframe>
+            </div>
+        </div>
+
+        <div class=" w-1/2 container mx-20 mt-40">
+            <h1 class="text-2xl font-bold" style="color:rgb(255, 255, 255);">ITERATIONS</h1>
+            <p class="mt-4 text-lg mb-12" style="color:rgb(255, 255, 255);">However, there were several flaws with the first design. The noise readings didn't fit 
+                well with the rest of the data and while the perlin waves were an interesting visual component, it wasn't particularly understandable from a glance 
+                and didn't really provide anything beyond a rough measurement which isn't terribly useful. Not all data should be grouped together. Thus, I created 
+                another GUI that only contains relevant information and fit it to a circular interface similar such as the one found on the Nest thermostat.
+            </p>
+        </div>
+        <div class="container mx-20 mt-20 flex">
+            <div class="w-1/2 mr-10">
+                <img src="assets/images/project-4/gui2-high-readings.png">
+            </div>
+            <div class="w-1/2 ml-10">
+                <img src="assets/images/project-4/gui2-low-readings.png">
+            </div>
+        </div>
+        <div class="container mx-20 mt-20 mb-20">
+            <iframe src="https://player.vimeo.com/video/638509599" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <video controls="controls" width="360" height="640" name="GUI 2 Screen">
+                <source src="assets/images/project-4/gui-two-screen.mov">
+            </video>
+        </div>
+        <center>
+            <iframe src="https://editor.p5js.org/thefumeister/full/puDyFeu-4" width="900" height="900"></iframe>
+        </center>
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#0d9488">
+        <div class="container mx-20 flex">
+            <div class="w-1/2 mr-10">
+                <h1 class="mt-10 text-2xl font-bold" style="color:rgb(255, 255, 255);">PROJECT OUTCOME</h1>
+                <p class="mt-4 text-lg" style="color:rgb(255, 255, 255);">While there are certainly limitations to this system, primarily due to Adafruit's 
+                    data throttling, I feel like I achieved the core goal of this project which was to interpret and visually display sensor data. 
+                    It didn't really matter that I used temperature, humidity, light, and sound. It could've been motion, air quality, acceleration, or a host of 
+                    other things. What matters is that I know how to get sensor readings, publish those readings to a database, then access that database to come 
+                    up with front-end user interfaces.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full pt-48 pb-48" style="background-color:#cbd5e1">
+        <div class="container mx-20 flex">
+            <div>
+                <h1 class="mt-4 text-6xl font-bold" style="color:rgb(255, 99, 71);">THE FUTURE</h1>
+            </div>
+            <div class="w-1/2 mx-40">
+                <p class="text-lg" style="color:rgb(255, 99, 71);">There's room for expansion and improvement for this sensor suite. While it ended up as a climate sensor 
+                    for a room, the original scope of the project was a room experience sensor which is why the noise sensor was there. However, the 4 data points 
+                    weren't enough to be able to do that. Future iterations would introduce new data points: motion detection, time, perhaps even word triggers, and 
+                    more. The outcome would be a system that allow the user to infer what's happening the room down to the most minute detail. Perhaps the user could 
+                    tell that was a party in the house based on readings that show there was loud noise and a lot of movement at night. Or I could introduce particle 
+                    sensors and the system could be used as a portable air quality index. Each new data point would require an exponentially robust enough GUI to 
+                    accomodate everything, but it would be nice to see how far this project could be pushed. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="width:200px;height:160px"> </div>
+</body>
+</html>
